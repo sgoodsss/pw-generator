@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+var lowercase = [`a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, `i`, `j`, `k`, `l`, `m`, `n`, `o`, `p`, `q`, `r`, `s`, `t`, `u`, `v`, `w`, `x`, `y`, `z`];
+var uppercase
+
 function generatePassword() {
   console.log(`Hey!  You clicked the button.`);
   // 1. Prompt the user with the password criteria
@@ -21,16 +24,7 @@ function generatePassword() {
         }
         // var lowercasePrompt = prompt () ask if they want lowercase characters
       }
-    //  Use a switch instead of if else statement
-      if (criteriaPrompt < 8) {
-        alert(`Sorry, please choose a longer password.`);
-      } else if ({
 
-      } else {
-
-      }
-
-      // how do I say number values only
   // 2. Validate the input
 
   // 3. Generate password
