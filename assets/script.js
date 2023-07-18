@@ -27,18 +27,28 @@ function generatePassword() {
         }
     
       var lowercasePrompt = confirm (`Do you want to use lowercase letters?`)
-      console.log(lowercasePrompt)
+      // console.log(lowercasePrompt)
       if (lowercasePrompt == true) {
         storeArray = lowercase.concat(storeArray);
-        // storeArray = uppercase.concat(storeArray);
       }
 
       var uppercasePrompt = confirm (`Do you want to use uppercase letters?`)
-      console.log(uppercasePrompt)
+      // console.log(uppercasePrompt)
       if (uppercasePrompt == true) {
         storeArray = uppercase.concat(storeArray);
       }
-      console.log(storeArray);
+
+      var specialCharactersPrompt = confirm (`Do you want to use special characters?`)
+      console.log(specialCharactersPrompt)
+      if (specialCharactersPrompt == true) {
+        storeArray = specialCharacters.concat(storeArray);
+      }
+
+      var numbersPrompt = confirm (`Do you want to use numbers?`)
+      console.log(numbersPrompt)
+      if (numbersPrompt == true) {
+        storeArray = numbers.concat(storeArray);
+      }
 
   // 3. Generate password
   for (var i = 0; i < criteriaPrompt; i++) {
