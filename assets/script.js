@@ -27,13 +27,13 @@ function generatePassword() {
         }
     
       var lowercasePrompt = confirm (`Do you want to use lowercase letters?`)
-      // console.log(lowercasePrompt)
+
       if (lowercasePrompt == true) {
         storeArray = lowercase.concat(storeArray);
       }
 
       var uppercasePrompt = confirm (`Do you want to use uppercase letters?`)
-      // console.log(uppercasePrompt)
+      
       if (uppercasePrompt == true) {
         storeArray = uppercase.concat(storeArray);
       }
@@ -53,12 +53,11 @@ function generatePassword() {
   // 3. Generate password
   for (var i = 0; i < criteriaPrompt; i++) {
     var storeNumber = Math.floor(Math.random() * storeArray.length);
-    console.log(storeNumber);
+    // console.log(storeNumber);
     var index = storeArray[storeNumber];
-    console.log (index);
+    // console.log (index);
     character.push(index);
-    // character.push(storeArray[storeNumber]);
-    console.log(character);
+    // console.log(character);
   }
   // 4.  Display the generated password on the page
   return character.join(``);
